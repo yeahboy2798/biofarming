@@ -591,7 +591,8 @@ textarea {
       align-items: center; }
       .events-section .events-transparent-cover .event-items-cover .event-items-container {
         width: 40%;
-        height: 100%; }
+        height: 100%;
+        margin: 30px; }
   .events-section .readmore-button {
     height: 40px;
     width: 30%;
