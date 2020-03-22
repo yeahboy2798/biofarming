@@ -1,0 +1,116 @@
+@import './mixins';
+@import './variables';
+
+/*start landing page*/
+
+
+
+.landing-page{
+    height: 750px;
+    width: 100%;
+    background: url("../images/index/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.landing-transparent{
+    @include widthandheight();
+    background:rgba(0,0,0, 0.5);
+    @include flexCenter(column, null);
+    justify-content: flex-start;
+    
+    .transparent-navbar{
+        @include flexCenter(null, null);
+        width: 80%;
+        height: 8%;
+       
+        border-top: 2px solid rgba(255,255,0, 0.5);
+        border-bottom: 0.1px solid #0eb956;
+        ul{
+            @include flexCenter(null, null);
+            @include widthandheight();
+            height: 80%;
+            justify-content: space-evenly;
+
+            a{
+                @include widthandheight(); 
+            }
+
+            .li-container{
+                @include nav-active();
+                @include widthandheight();
+                width: auto;
+                li{
+                    @include widthandheight();
+                    height: 100%;
+                    @include flexCenter(null, null);
+                 
+                    .nav-active{
+                        @include nav-active();
+                    }
+
+                }
+            }
+
+
+        }
+
+        
+    }
+    
+    .landing-bottom{
+        height: 1%;
+        width: 100%;
+        background-color: rgb(17, 185, 87);
+        @include flexCenter(null, null);
+
+        .triangle{
+            font-size: 30px;
+            color: rgb(17, 185, 87);
+            margin-top: 15px;
+        }
+    }
+
+}
+
+.logo-container{
+    @include widthandheight();
+    height: 60%;
+    @include flexCenter(null, null);
+
+    
+}
+
+.landing-text-container{
+    @include flexCenter(column, null);
+    height: 40%;
+    width: 90%;
+   
+    
+    .hello{
+        font-size: 40px;
+        @include whitecolor();
+    }
+
+    .byusing{
+        font-size: 45px;
+        @include whitecolor();
+    }
+
+    .wecan{
+        font-size: 60px;
+        @include whitecolor();
+        font-weight: bold;;
+    }
+
+    .greentext{
+        color: #14ff77;
+    }
+
+}
+
+
+
+
+
+/*end landing page*/

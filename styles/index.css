@@ -1,0 +1,447 @@
+/*colors*/
+/*end colors*/
+/*elements*/
+/*tests*/
+/*start landing*/
+.landing-page, .welcome-section, .services-section, .readmore-section, .footer-section {
+  height: 750px;
+  width: 100%;
+  background: url("../images/index/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  .landing-page .landing-transparent, .welcome-section .landing-transparent, .services-section .landing-transparent, .readmore-section .landing-transparent, .footer-section .landing-transparent {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start; }
+  .landing-page .logo-container, .welcome-section .logo-container, .services-section .logo-container, .readmore-section .logo-container, .footer-section .logo-container {
+    width: 100%;
+    height: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .landing-page .landing-text-container, .welcome-section .landing-text-container, .services-section .landing-text-container, .readmore-section .landing-text-container, .footer-section .landing-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
+    width: 90%;
+    color: white; }
+  .landing-page .upperText, .welcome-section .upperText, .services-section .upperText, .readmore-section .upperText, .footer-section .upperText, .landing-page .middleText, .welcome-section .middleText, .services-section .middleText, .readmore-section .middleText, .footer-section .middleText, .landing-page .lowestText, .welcome-section .lowestText, .services-section .lowestText, .readmore-section .lowestText, .footer-section .lowestText, .landing-page .greenText, .welcome-section .greenText, .services-section .greenText, .readmore-section .greenText, .footer-section .greenText {
+    font-size: 30px;
+    color: white; }
+  .landing-page .middleText, .welcome-section .middleText, .services-section .middleText, .readmore-section .middleText, .footer-section .middleText, .landing-page .lowestText, .welcome-section .lowestText, .services-section .lowestText, .readmore-section .lowestText, .footer-section .lowestText, .landing-page .greenText, .welcome-section .greenText, .services-section .greenText, .readmore-section .greenText, .footer-section .greenText {
+    font-size: 40px; }
+  .landing-page .lowestText, .welcome-section .lowestText, .services-section .lowestText, .readmore-section .lowestText, .footer-section .lowestText, .landing-page .greenText, .welcome-section .greenText, .services-section .greenText, .readmore-section .greenText, .footer-section .greenText {
+    font-size: 60px; }
+  .landing-page .greenText, .welcome-section .greenText, .services-section .greenText, .readmore-section .greenText, .footer-section .greenText {
+    color: #22d166; }
+  .landing-page .transparent-navbar, .welcome-section .transparent-navbar, .services-section .transparent-navbar, .readmore-section .transparent-navbar, .footer-section .transparent-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    height: 50px;
+    color: white;
+    border-top: 2px solid rgba(255, 255, 0, 0.5); }
+  .landing-page .nav-item-holder, .welcome-section .nav-item-holder, .services-section .nav-item-holder, .readmore-section .nav-item-holder, .footer-section .nav-item-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 50%;
+    justify-content: space-evenly; }
+  .landing-page .nav-item, .welcome-section .nav-item, .services-section .nav-item, .readmore-section .nav-item, .footer-section .nav-item {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .landing-page .nav-item a, .welcome-section .nav-item a, .services-section .nav-item a, .readmore-section .nav-item a, .footer-section .nav-item a {
+      color: white; }
+    .landing-page .nav-item:hover, .welcome-section .nav-item:hover, .services-section .nav-item:hover, .readmore-section .nav-item:hover, .footer-section .nav-item:hover {
+      height: 100%;
+      width: auto;
+      border-top: 1.5px solid yellow;
+      border-bottom: 1.5px solid yellow;
+      cursor: pointer;
+      color: #1bd063; }
+      .landing-page .nav-item:hover a, .welcome-section .nav-item:hover a, .services-section .nav-item:hover a, .readmore-section .nav-item:hover a, .footer-section .nav-item:hover a {
+        color: #09e466; }
+    .landing-page .nav-item .active, .welcome-section .nav-item .active, .services-section .nav-item .active, .readmore-section .nav-item .active, .footer-section .nav-item .active {
+      height: 100%;
+      width: auto;
+      border-top: 1.5px solid yellow;
+      border-bottom: 1.5px solid yellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      color: #1bd063; }
+      .landing-page .nav-item .active a, .welcome-section .nav-item .active a, .services-section .nav-item .active a, .readmore-section .nav-item .active a, .footer-section .nav-item .active a {
+        color: #09e466; }
+      .landing-page .nav-item .active:hover, .welcome-section .nav-item .active:hover, .services-section .nav-item .active:hover, .readmore-section .nav-item .active:hover, .footer-section .nav-item .active:hover {
+        border: 0px; }
+  .landing-page .landing-bottom, .welcome-section .landing-bottom, .services-section .landing-bottom, .readmore-section .landing-bottom, .footer-section .landing-bottom {
+    height: 1.5%;
+    width: 100%;
+    background-color: #11b957;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .landing-page .triangle, .welcome-section .triangle, .services-section .triangle, .readmore-section .triangle, .footer-section .triangle {
+    font-size: 30px;
+    color: #11b957;
+    margin-top: 15px; }
+
+/*end landing*/
+/*start welcome */
+.welcome-section, .services-section, .readmore-section, .footer-section {
+  margin: 0;
+  height: 600px;
+  background: white; }
+  .welcome-section .welcome-caption-container, .services-section .welcome-caption-container, .readmore-section .welcome-caption-container, .footer-section .welcome-caption-container, .services-section .services-caption-container {
+    width: 100%;
+    height: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .welcome-section .welcome-caption-container h1, .services-section .welcome-caption-container h1, .readmore-section .welcome-caption-container h1, .footer-section .welcome-caption-container h1, .services-section .services-caption-container h1 {
+      color: #09e466;
+      font-size: 60px; }
+  .welcome-section .welcome-image-continer, .services-section .welcome-image-continer, .readmore-section .welcome-image-continer, .footer-section .welcome-image-continer, .welcome-section .welcome-bottom-text, .services-section .welcome-bottom-text, .readmore-section .welcome-bottom-text, .footer-section .welcome-bottom-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 100%; }
+  .welcome-section .images-box, .services-section .images-box, .readmore-section .images-box, .footer-section .images-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    width: 90%;
+    justify-content: space-evenly; }
+    .welcome-section .images-box img, .services-section .images-box img, .readmore-section .images-box img, .footer-section .images-box img {
+      border: 8px solid #e4e4e4;
+      height: 100%;
+      width: 40%; }
+  .welcome-section .welcome-bottom-text, .services-section .welcome-bottom-text, .readmore-section .welcome-bottom-text, .footer-section .welcome-bottom-text {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .welcome-section .welcome-bottom-text .bottom-text-container, .services-section .welcome-bottom-text .bottom-text-container, .readmore-section .welcome-bottom-text .bottom-text-container, .footer-section .welcome-bottom-text .bottom-text-container {
+      width: 100%;
+      height: 100%;
+      width: 79%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+
+/*end welcome*/
+/*begin services*/
+.services-section {
+  background: whitesmoke;
+  height: 600px; }
+  .services-section .services-caption-container {
+    justify-content: flex-end; }
+  .services-section .services-items-container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly; }
+  .services-section .services-box {
+    width: 100%;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .services-section .services-box-item {
+    width: 20%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .services-section .services-box-item:hover .icon-cover {
+      border: dashed #c9cc13; }
+    .services-section .services-box-item .item-cover-top, .services-section .services-box-item .item-cover-middle, .services-section .services-box-item .item-cover-low {
+      height: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .services-section .services-box-item .item-cover-middle {
+      height: 10%;
+      justify-content: flex-end; }
+    .services-section .services-box-item .item-cover-low {
+      height: 25%;
+      justify-content: flex-start; }
+      .services-section .services-box-item .item-cover-low .item-caption {
+        margin: 0 auto;
+        text-align: center; }
+    .services-section .services-box-item .icon-cover {
+      height: 120px;
+      width: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #c9cc13;
+      border-radius: 500px; }
+      .services-section .services-box-item .icon-cover:hover {
+        border: dashed #c9cc13; }
+      .services-section .services-box-item .icon-cover .glyphicon {
+        color: #c9cc13;
+        font-size: 30px; }
+    .services-section .services-box-item .item-title {
+      font-size: 20px;
+      font-weight: bold; }
+
+/*end services*/
+/*start readmore*/
+.readmore-section, .footer-section {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .readmore-section .readmore-cover, .footer-section .readmore-cover {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .readmore-section .readmore-left, .footer-section .readmore-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    justify-content: flex-start; }
+    .readmore-section .readmore-left .readmore-holder, .footer-section .readmore-left .readmore-holder, .readmore-section .readmore-left .readmore-holder-top, .footer-section .readmore-left .readmore-holder-top, .readmore-section .readmore-left .readmore-holder-last, .footer-section .readmore-left .readmore-holder-last {
+      height: 20%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: flex-start; }
+    .readmore-section .readmore-left .readmore-holder-top, .footer-section .readmore-left .readmore-holder-top {
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start; }
+    .readmore-section .readmore-left .green-text, .footer-section .readmore-left .green-text {
+      color: #09e466;
+      width: 90%;
+      height: 30%;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      justify-content: center; }
+    .readmore-section .readmore-left .middletext, .footer-section .readmore-left .middletext {
+      height: 50%;
+      width: 90%;
+      align-items: center;
+      border-top: 1px solid rgba(193, 193, 193, 0.5);
+      border-bottom: 1px solid rgba(193, 193, 193, 0.5);
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+    .readmore-section .readmore-left .readmore-box, .footer-section .readmore-left .readmore-box {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .readmore-section .readmore-left .readmore-holder-last, .footer-section .readmore-left .readmore-holder-last {
+      height: 50%; }
+    .readmore-section .readmore-left .readmore-button, .footer-section .readmore-left .readmore-button {
+      height: 40px;
+      width: 30%;
+      border: 1px solid #09e466;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .readmore-section .readmore-left .readmore-button a, .footer-section .readmore-left .readmore-button a {
+        color: #09e466; }
+      .readmore-section .readmore-left .readmore-button:hover, .footer-section .readmore-left .readmore-button:hover {
+        background-color: #09e466;
+        cursor: pointer; }
+        .readmore-section .readmore-left .readmore-button:hover a, .footer-section .readmore-left .readmore-button:hover a {
+          color: white; }
+    .readmore-section .readmore-left .readmore-title, .footer-section .readmore-left .readmore-title {
+      color: #c9cc13;
+      font-size: 20px; }
+    .readmore-section .readmore-left .readmore-caption, .footer-section .readmore-left .readmore-caption {
+      font-size: 17px; }
+    .readmore-section .readmore-left .readmore-items, .footer-section .readmore-left .readmore-items {
+      width: 43%; }
+  .readmore-section .readmore-right, .footer-section .readmore-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    height: 70%; }
+    .readmore-section .readmore-right .img-container, .footer-section .readmore-right .img-container {
+      height: 325px;
+      width: 325px;
+      background: url(../images/index/welcome3.jpg);
+      border-radius: 500px;
+      background-size: 100% 100%; }
+
+/*end readmore*/
+/*start contact*/
+.contact-section {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .contact-section iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1; }
+  .contact-section .contact-holder {
+    position: absolute;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contact-section .contact-holder .contact-holder-inside {
+      height: 65%;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly; }
+      .contact-section .contact-holder .contact-holder-inside .contact-left, .contact-section .contact-holder .contact-holder-inside .contact-middle, .contact-section .contact-holder .contact-holder-inside .contact-right {
+        height: 100%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: inherit; }
+        .contact-section .contact-holder .contact-holder-inside .contact-left .newsletter, .contact-section .contact-holder .contact-holder-inside .contact-middle .newsletter, .contact-section .contact-holder .contact-holder-inside .contact-right .newsletter {
+          height: 70%;
+          width: 100%;
+          border: 3px solid rgba(255, 255, 255, 0.3);
+          color: rgba(255, 255, 255, 0.3);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          align-items: center; }
+          .contact-section .contact-holder .contact-holder-inside .contact-left .newsletter .news-letter-text, .contact-section .contact-holder .contact-holder-inside .contact-middle .newsletter .news-letter-text, .contact-section .contact-holder .contact-holder-inside .contact-right .newsletter .news-letter-text, .contact-section .contact-holder .contact-holder-inside .contact-left .newsletter .glyphicon-envelope, .contact-section .contact-holder .contact-holder-inside .contact-middle .newsletter .glyphicon-envelope, .contact-section .contact-holder .contact-holder-inside .contact-right .newsletter .glyphicon-envelope {
+            font-size: 30px;
+            color: white; }
+          .contact-section .contact-holder .contact-holder-inside .contact-left .newsletter .glyphicon-envelope, .contact-section .contact-holder .contact-holder-inside .contact-middle .newsletter .glyphicon-envelope, .contact-section .contact-holder .contact-holder-inside .contact-right .newsletter .glyphicon-envelope {
+            font-size: 50px; }
+      .contact-section .contact-holder .contact-holder-inside .contact-middle {
+        width: 40%; }
+      .contact-section .contact-holder .contact-holder-inside .txt-text-input, .contact-section .contact-holder .contact-holder-inside button, .contact-section .contact-holder .contact-holder-inside textarea {
+        height: 12%;
+        width: 100%;
+        border: none;
+        background: rgba(255, 255, 255, 0.3);
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 16px; }
+      .contact-section .contact-holder .contact-holder-inside .txt-text-input::placeholder, .contact-section .contact-holder .contact-holder-inside button::placeholder, .contact-section .contact-holder .contact-holder-inside textarea::placeholder {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 16px; }
+      .contact-section .contact-holder .contact-holder-inside button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #09e466;
+        border: 1px solid #09e466; }
+        .contact-section .contact-holder .contact-holder-inside button:hover {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid #09e466;
+          background: white;
+          color: #09e466;
+          cursor: pointer; }
+      .contact-section .contact-holder .contact-holder-inside textarea {
+        width: 100%;
+        height: 50%; }
+    .contact-section .contact-holder .contact-right-container {
+      height: 30%;
+      width: 100%;
+      height: 30%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: flex-start; }
+      .contact-section .contact-holder .contact-right-container .glyphicon-phone, .contact-section .contact-holder .contact-right-container .glyphicon-send, .contact-section .contact-holder .contact-right-container .glyphicon-envelope {
+        font-size: 40px;
+        color: white; }
+      .contact-section .contact-holder .contact-right-container .contact-text-container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px;
+        color: white; }
+      .contact-section .contact-holder .contact-right-container .mail {
+        color: #fbff00; }
+
+/*end contact*/
+/*start footer*/
+.footer-section {
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .footer-section .social-icons-holder, .footer-section .copyright-holder {
+    flex-direction: column;
+    height: 40%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row; }
+  .footer-section .copyright-holder {
+    height: 10%;
+    width: 50%; }
+
+/*end footer*/
+
+/*# sourceMappingURL=index.css.map */

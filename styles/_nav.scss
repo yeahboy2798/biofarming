@@ -1,0 +1,104 @@
+$nav-text-color : #8f94a8;
+
+
+
+
+.uppernav{
+   position: fixed;
+    z-index: 9999;
+    height: 45px;
+    width: 100%;
+    @include flexCenter(null, $navbackground);
+    align-items: center;
+    justify-content: space-between;
+
+    .glyphicon{
+        color: $nav-text-color;
+        font-size: 25px;
+    }
+
+    .download-container{
+        &:hover{
+            @include hovernav();
+        }
+    }
+
+    .glyphicon-shopping-cart{
+        color: #4169e1;
+    }
+
+    .left-nav{
+        @include flexCenter(null, null);
+        height: 100%;
+        width: 5%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px;
+
+        .navtext{
+        
+            color: $nav-text-color;
+        }
+
+        
+
+        &:hover{
+            @include hovernav();
+        }
+    }
+
+    .right-nav{
+
+        
+        height: 100%;
+        width: 20%;
+        @include flexCenter(null, null);
+        justify-content: space-evenly;
+       
+       
+        .navtext{
+            color: white;
+
+            &:hover{
+                @include hovernav();
+            }
+        }
+
+        .download-container{
+            @include flexCenter(null, null);
+            height: 100%;
+            width: 30%;
+
+            .navtext{
+                margin: 20px;
+            }
+
+            &:hover{
+                .glyphicon{
+                    @include hovernav();
+                }
+
+                .navtext{
+                    @include hovernav();
+                }
+            }
+            
+        }
+
+
+    }
+
+  
+
+    
+
+    
+
+
+
+
+    
+    
+}
+
+

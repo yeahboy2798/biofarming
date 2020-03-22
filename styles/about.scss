@@ -1,0 +1,91 @@
+@import './mixins';
+@import './variables';
+
+/*start landing page*/
+.about-landing-page{
+    @extend .landing-page;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+
+    .logo-container{
+        height: 100%;
+    }
+}
+/*end landing page*/
+
+/*start about us*/
+.about-us-section{
+ @extend .welcome-section;
+
+    .about-us-container{
+    @extend .welcome-caption-container;
+    justify-content: flex-end;
+
+    
+
+    }
+
+    .about-us-pic-caption-holder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        img{
+            border-radius: 500px;
+        }
+    }
+
+    .about-us-text-holder {
+        width: 55%;
+
+        h4{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 0 0 10px;
+            line-height: 25px;
+        }
+    }
+}
+/*end about us*/
+
+/*begin events*/
+.events-section{
+    @extend .about-us-section;
+    height: 500px;
+    @include flexCenter2();
+    background: url("../images/aboutus/events.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+
+    .events-transparent-cover{
+        height: 100%;
+        width: 100%;
+        background: rgba(30,30,30, 0.5);
+
+
+        .event-items-cover{
+            height: 80%;
+            width: 100%;
+            @include flexCenter2();
+
+
+            .event-items-container{
+                width: 40%;
+                height: 100%;
+            }
+            
+        }
+    }
+
+    .readmore-button{
+        @include readMoreButton();
+    }
+}
+/*end events*/

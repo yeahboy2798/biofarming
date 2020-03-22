@@ -1,0 +1,595 @@
+@import './mixins';
+@import './variables';
+
+/*start landing*/
+.landing-page{
+    height: 750px;
+    width: 100%;
+    background: url("../images/index/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .landing-transparent{
+        @include widthandheight();
+        background:rgba(0,0,0, 0.5);
+        @include flexCenter(column, null);
+        justify-content: flex-start;
+    }
+    
+    .logo-container{
+        @include widthandheight();
+        height: 60%;
+        @include flexCenter(null, null);
+       
+        
+    }
+    
+    .landing-text-container{
+        @include flexCenter(column, null);
+        height: 40%;
+        width: 90%;
+        @include whiteTextColor();
+    }
+    
+    .upperText{
+        font-size: 30px;
+        @include whiteTextColor();
+    }
+    
+    .middleText{
+        @extend .upperText;
+        font-size: 40px;
+    
+    }
+    
+    .lowestText{
+        @extend .middleText;
+        font-size: 60px;
+    }
+    
+    .greenText{
+        @extend .lowestText;
+        color: rgba(34,209,102, 1);
+    }
+    
+    
+    .transparent-navbar{
+        @include flexCenter(row, null);
+        width: 80%;
+        height: 50px;
+        @include testBackground();
+        @include whiteTextColor();
+        border-top: 2px solid rgba(255,255,0, 0.5);
+    }
+    
+    .nav-item-holder{
+        @include flexCenter(row, null);
+        height: 100%;
+        width: 50%;
+        justify-content: space-evenly;
+        @include testBackground();
+    }
+
+    .nav-item {
+        height: 100%;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        a{
+            color: white;
+        }
+    
+        &:hover{
+            @include navActive();
+            cursor: pointer;
+            color: rgb(27,208,99);
+        }
+    
+    .active{
+        @include navActive();
+        @include flexCenter(row, null);
+        color: rgb(27,208,99);
+    
+        &:hover{
+            border: 0px;
+            
+        }
+    }
+    
+    
+    
+        
+    }
+    
+    
+    
+    .landing-bottom{
+        height: 1.5%;
+        width: 100%;
+        background-color: rgb(17, 185, 87);
+        @include flexCenter(null, null);
+    }
+    
+    .triangle{
+        font-size: 30px;
+        color: rgb(17, 185, 87);
+        margin-top: 15px;
+    }
+    
+}
+
+/*end landing*/
+
+/*start welcome */
+.welcome-section{
+    @extend .landing-page;
+    margin: 0;
+    height: 600px;
+    @include whiteBackgroundColor();
+
+    .welcome-caption-container{
+        @include widthandheight();
+        height: 30%;
+        @include flexCenter(column, null);
+        
+        h1{
+            @include websiteGreenTextColor();
+            font-size: 60px;
+            
+        }
+    }
+    
+    .welcome-image-continer{
+        @include flexCenter(null, null);
+        height: 40%;
+        width: 100%;
+        
+    
+    }
+    
+    .images-box{
+        @include flexCenter(row, null);
+        @include widthandheight();
+        width: 90%;
+        justify-content: space-evenly;
+        
+    
+        img{
+            border: 8px solid rgba(228,228,228, 1);
+            height: 100%;
+            width: 40%;
+        }
+    }
+    
+    .welcome-bottom-text{
+        @extend .welcome-image-continer;
+        height: 30%;
+        width: 100%;
+        @include testBackground();
+        @include flexCenter(null, null);
+    
+        .bottom-text-container{
+            @include widthandheight();
+            width: 79%;
+            @include flexCenter(null, null);
+            text-align: center;
+        }
+    }
+    
+}
+
+
+/*end welcome*/
+
+/*begin services*/
+.services-section{
+    @extend .welcome-section;
+    background: rgba(245,245,245, 1);
+    height: 600px;
+
+
+    .services-caption-container{
+        @extend .welcome-caption-container;
+        justify-content: flex-end;
+    }
+    
+    .services-items-container{
+        height: 80%;
+        width: 100%;
+        @include flexCenter(null, null);
+        justify-content: space-evenly;
+    }
+    
+    .services-box{
+        @include widthandheight();
+        width: 80%;
+        @include flexCenter(null, null);
+        justify-content: space-between;
+        align-items: flex-start;
+        
+    
+    }
+    
+    .services-box-item{
+        width: 20%;
+        height: 60%;
+        @include flexCenter(column, null);  
+    
+        &:hover{
+           .icon-cover {
+            border: dashed rgba(201,204,19, 1);
+           }
+        }
+        
+        .item-cover-top{
+            height: 60%;
+            @include flexCenter(null, null);
+            
+            
+        }
+    
+        .item-cover-middle{
+            @extend .item-cover-top;
+            height: 10%;
+            justify-content: flex-end;
+        }
+    
+        .item-cover-low{
+            @extend .item-cover-top;
+            height: 25%;
+            justify-content: flex-start;
+    
+            .item-caption{
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    
+        .icon-cover{
+            height: 120px;
+            width: 120px;
+            @include flexCenter(null, null);  
+            border: 2px solid rgba(201,204,19, 1);
+            @include createCircle();
+        
+            &:hover{
+                border: dashed rgba(201,204,19, 1);
+            }
+        
+            .glyphicon{
+                color:  rgba(201,204,19, 1);
+                font-size: 30px;
+            }
+        
+        }
+    
+        .item-title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+    
+    }
+}
+/*end services*/
+
+/*start readmore*/
+.readmore-section{
+    @extend .welcome-section;
+    height: 600px;
+    @include flexCenter(null, null);
+
+
+
+    .readmore-cover{
+        height: 100%;
+        width: 90%;
+        @include flexCenter(null, null);
+    }
+    
+    .readmore-left{
+        @include flexCenter(column, null);
+        width: 70%;
+        
+        height: 100%;
+        justify-content: flex-start;
+    
+        .readmore-holder{
+            height: 20%;
+            width: 100%;
+            @include flexCenter(null, null);
+            justify-content: flex-start;
+        }
+    
+        .readmore-holder-top{
+            @extend .readmore-holder;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+    
+        }
+    
+        .green-text{
+            @include websiteGreenTextColor();
+            width: 90%;
+            height: 30%;
+            font-size: 20px;
+            @include flexStart();
+            justify-content: center;
+        
+        }
+        
+        .middletext{
+           height: 50%;
+           width: 90%;
+           
+           align-items: center;
+           border-top: 1px solid rgba(193,193,193, 0.5);
+           border-bottom: 1px solid rgba(193,193,193, 0.5);
+           font-size: 20px;
+           @include flexStart();
+           
+        }
+    
+        .readmore-box{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+    
+        }
+    
+    
+        .readmore-holder-last{
+            @extend .readmore-holder;
+            height: 50%;
+            
+        }
+    
+        .readmore-button{
+            @include readMoreButton();
+        }
+    
+      
+        
+        .readmore-title{
+            @include websiteGoldBackgroundColor();
+            font-size: 20px;
+        }
+    
+        .readmore-caption{
+            font-size: 17px;
+        }
+    
+        .readmore-items {
+            width: 43%;
+        }
+    
+    }
+    
+    
+    
+    .readmore-right{
+        @include flexCenter(column, null);
+        justify-content: flex-end;
+        align-items: center;
+        width: 30%;
+        height: 70%;
+    
+        .img-container{
+            height: 325px;
+            width: 325px;
+            background: url(../images/index/welcome3.jpg);
+            border-radius: 500px;
+            background-size: 100% 100%;
+        }
+    }
+    
+}
+
+
+/*end readmore*/
+
+/*start contact*/
+.contact-section{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    iframe{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        
+    }
+
+    .contact-holder{
+        position: absolute;
+        z-index: 3;
+        height: 100%;
+        width: 100%;
+        background: rgba(30,30,30, 0.6);
+        @include flexCenter2();
+
+
+        .contact-holder-inside{
+            height: 65%;
+            width: 80%;
+            @include flexCenter2();
+            justify-content: space-evenly;
+
+
+           
+           
+            .contact-left{
+                height: 100%;
+                width: 25%;
+                @include flexCenter2();
+                flex-direction: column;
+                justify-content: inherit;
+
+
+                .newsletter{
+                    height: 70%;
+                    width: 100%;
+                    border: 3px solid rgba(255,255,255, 0.3);
+                    color: rgba(255,255,255, 0.3);
+                    
+                    @include flexCenter2();
+                    flex-direction: column;
+                    align-items: center;
+                    
+
+                    .news-letter-text{
+                        font-size: 30px;
+                        color: rgb(255,255,255);
+                    }
+
+                    .glyphicon-envelope {
+                        @extend .news-letter-text;
+                        font-size: 50px;
+
+                    }
+                    
+                    
+                }
+            }
+
+            .contact-middle{
+                @extend .contact-left;
+                width: 40%;
+
+            }
+
+            .contact-right{
+                @extend .contact-left;
+
+
+            }
+
+
+            .txt-text-input{
+                height: 12%;
+                width: 100%;
+                border: none;
+                background: rgba(255,255,255, 0.3);
+                padding: 10px;
+
+                color: rgba(255,255,255, 0.8); 
+                font-size: 16px; 
+            }
+
+            .txt-text-input::placeholder {
+                
+                color: rgba(255,255,255, 0.8); 
+                font-size: 16px; 
+                 
+            }
+
+            button{
+                @extend .txt-text-input;
+                @include flexCenter2();
+                @include whiteTextColor();
+                @include websiteGreenBackgroundColor();
+                @include websiteGreenBorderColor();
+
+                &:hover{
+                    @include flexCenter2();
+                    border: 2px solid rgba(9,228,102, 1);
+                    background: rgba(255,255,255, 1);
+
+                    @include websiteGreenTextColor();
+                    cursor: pointer;
+
+                }
+            }
+
+            textarea{
+                width: 100%;
+                height: 50%;
+                @extend .txt-text-input; 
+            }
+            
+
+        }
+        
+        .contact-right-container{
+            height: 30%;
+            width: 100%;
+
+            height: 30%;
+            width: 100%;
+            @include flexCenter2();
+            justify-content: flex-start;
+
+
+            .glyphicon-phone{
+                font-size: 40px;
+                color: rgb(255,255,255);
+            }
+
+            .glyphicon-send{
+                @extend .glyphicon-phone;
+            }
+
+            .glyphicon-envelope{
+                @extend .glyphicon-phone;
+            }
+
+            .contact-text-container {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+                margin: 15px;
+                color: white;
+
+                
+            }
+
+           
+            .mail{
+                color: rgb(251, 255, 0);
+            }
+
+            
+        }
+        
+     }
+}
+/*end contact*/
+
+/*start footer*/
+.footer-section{
+    @extend .readmore-section;
+    height: 230px;
+    @include flexCenter2();
+    flex-direction: column;
+
+    .social-icons-holder{
+        flex-direction: column;
+        height: 40%;
+        width: 25%;
+        @include flexCenter2();
+        justify-content: space-around;
+        flex-direction: row;
+
+    }
+
+    .copyright-holder{
+        @extend .social-icons-holder;
+        height: 10%;
+        width: 50%;
+    }
+}
+/*end footer*/
